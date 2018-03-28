@@ -1,0 +1,2 @@
+include ':crash_handler'
+project(':crash_handler').projectDir = new File('demos/crash_handler')
