@@ -1,2 +1,4 @@
-include ':crash_handler'
+include ':crash_handler', ':toolbar', ':shake_button'
 project(':crash_handler').projectDir = new File('demos/crash_handler')
+project(':toolbar').projectDir = new File('demos/toolbar')
+project(':shake_button').projectDir = new File('demos/shake_button')

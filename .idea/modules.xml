@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DemoList.iml" filepath="$PROJECT_DIR$/DemoList.iml" />
-      <module fileurl="file://$PROJECT_DIR$/demos/crash_handler/app.iml" filepath="$PROJECT_DIR$/demos/crash_handler/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demos/crash_handler/crash_handler.iml" filepath="$PROJECT_DIR$/demos/crash_handler/crash_handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demos/shake_button/shake_button.iml" filepath="$PROJECT_DIR$/demos/shake_button/shake_button.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demos/toolbar/toolbar.iml" filepath="$PROJECT_DIR$/demos/toolbar/toolbar.iml" />
     </modules>
   </component>
 </project>

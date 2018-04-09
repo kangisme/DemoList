@@ -9,6 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/demos/crash_handler" />
+            <option value="$PROJECT_DIR$/demos/shake_button" />
+            <option value="$PROJECT_DIR$/demos/toolbar" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
