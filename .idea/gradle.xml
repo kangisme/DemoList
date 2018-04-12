@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/commom" />
             <option value="$PROJECT_DIR$/demos/crash_handler" />
+            <option value="$PROJECT_DIR$/demos/mvp" />
             <option value="$PROJECT_DIR$/demos/rotate_drawable" />
             <option value="$PROJECT_DIR$/demos/shake_button" />
             <option value="$PROJECT_DIR$/demos/toolbar" />

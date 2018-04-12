@@ -29,5 +29,8 @@ task clean(type: Delete) {
 
 ext {
     logger = 'com.orhanobut:logger:2.2.0'
-
+    dagger2 = 'com.google.dagger:dagger:2.4'
+    dagger2Processor = 'com.google.dagger:dagger-compiler:2.4'
+    butterknife = 'com.jakewharton:butterknife:8.8.1'
+    butterknifeProcessor = 'com.jakewharton:butterknife-compiler:8.8.1'
 }
