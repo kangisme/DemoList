@@ -12,12 +12,16 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.orhanobut.logger.Logger;
+
 public class TitleBar extends RelativeLayout
 {
     /**
      * 解析text属性
      */
-    public static int[] TEXT_ATTR = {android.R.attr.textStyle, android.R.attr.text};
+//    public static int[] TEXT_ATTR = {android.R.attr.textStyle, android.R.attr.text};
+
+    public static int[] TEXT_ATTR = {android.R.attr.text, android.R.attr.textStyle};
 
 
     /**
@@ -41,13 +45,27 @@ public class TitleBar extends RelativeLayout
     {
         super(context, attrs, defStyleAttr);
         initView();
+        int count = attrs.getAttributeCount();
+        for (int i = 0; i < count; i++) {
+            String attrName = attrs.getAttributeName(i);
+            String attrVal = attrs.getAttributeValue(i);
+            Logger.e("attrName = " + attrName + " , attrVal = " + attrVal);
+        }
         try
         {
-            TypedArray ta = context.obtainStyledAttributes(attrs, TEXT_ATTR);
-            setText(ta.getText(1));
-            int style = ta.getInt(0, 0);
+            TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.TitleBar);
+            int style = ta.getInteger(R.styleable.TitleBar_android_textStyle, 0);
             setTextStyle(style);
+            setText(ta.getText(R.styleable.TitleBar_android_text));
+            Logger.d(style);
             ta.recycle();
+
+            //style文件中自定义属性
+//            TypedArray taStyle = context.obtainStyledAttributes(attrs, R.styleable.TitleBar);
+//            setText(taStyle.getText(R.styleable.TitleBar_text));
+//            int styleStyle = taStyle.getInteger(R.styleable.TitleBar_textStyle, 0);
+//            setTextStyle(styleStyle);
+//            taStyle.recycle();
         }
         catch (Exception e)
         {

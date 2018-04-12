@@ -1,4 +1,8 @@
-include ':crash_handler', ':toolbar', ':shake_button'
+include ':crash_handler', ':toolbar', ':shake_button', ':view_animation', ':value_animation', ':commom', 'rotate_drawable'
 project(':crash_handler').projectDir = new File('demos/crash_handler')
 project(':toolbar').projectDir = new File('demos/toolbar')
 project(':shake_button').projectDir = new File('demos/shake_button')
+project(':view_animation').projectDir = new File('demos/view_animation')
+project(':value_animation').projectDir = new File('demos/value_animation')
+project(':rotate_drawable').projectDir = new File('demos/rotate_drawable')
+

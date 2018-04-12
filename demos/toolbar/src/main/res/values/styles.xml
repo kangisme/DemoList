@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <declare-styleable name="TitleBar">
+        <attr name="android:text"/>
+        <attr name="android:textStyle">
+        </attr>
+    </declare-styleable>
+
 </resources>

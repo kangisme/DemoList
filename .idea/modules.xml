@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DemoList.iml" filepath="$PROJECT_DIR$/DemoList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commom/commom.iml" filepath="$PROJECT_DIR$/commom/commom.iml" />
       <module fileurl="file://$PROJECT_DIR$/demos/crash_handler/crash_handler.iml" filepath="$PROJECT_DIR$/demos/crash_handler/crash_handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demos/rotate_drawable/rotate_drawable.iml" filepath="$PROJECT_DIR$/demos/rotate_drawable/rotate_drawable.iml" />
       <module fileurl="file://$PROJECT_DIR$/demos/shake_button/shake_button.iml" filepath="$PROJECT_DIR$/demos/shake_button/shake_button.iml" />
       <module fileurl="file://$PROJECT_DIR$/demos/toolbar/toolbar.iml" filepath="$PROJECT_DIR$/demos/toolbar/toolbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demos/value_animation/value_animation.iml" filepath="$PROJECT_DIR$/demos/value_animation/value_animation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demos/view_animation/view_animation.iml" filepath="$PROJECT_DIR$/demos/view_animation/view_animation.iml" />
     </modules>
   </component>
 </project>

@@ -8,9 +8,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/commom" />
             <option value="$PROJECT_DIR$/demos/crash_handler" />
+            <option value="$PROJECT_DIR$/demos/rotate_drawable" />
             <option value="$PROJECT_DIR$/demos/shake_button" />
             <option value="$PROJECT_DIR$/demos/toolbar" />
+            <option value="$PROJECT_DIR$/demos/value_animation" />
+            <option value="$PROJECT_DIR$/demos/view_animation" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
