@@ -11,9 +11,14 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity
 {
+    @Inject
+    Cloth cloth;
 
     @Inject
-    User user;
+    Shoe shoe;
+
+    @Inject
+    Clothes clothes;
 
     @BindView(R.id.content)
     TextView content;
@@ -24,11 +29,12 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        DaggerTestMainComponent.builder().build().inject(this);
+        MainComponent build = DaggerMainComponent.builder().mainModule(new MainModule()).build();
+        build.inject(this);
         content.postDelayed(new Runnable() {
             @Override
             public void run() {
-                content.setText(user.getName());
+                content.setText(cloth.toString() + shoe.toString() + clothes.toString());
             }
         }, 2000);
     }
