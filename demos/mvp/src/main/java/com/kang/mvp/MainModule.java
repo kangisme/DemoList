@@ -1,5 +1,7 @@
 package com.kang.mvp;
 
+import javax.inject.Named;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -7,9 +9,18 @@ import dagger.Provides;
 public class MainModule {
 
     @Provides
-    Cloth provideCloth() {
+    @Named("red")
+    public Cloth getRedColor() {
         Cloth cloth = new Cloth();
         cloth.setColor("红色");
+        return cloth;
+    }
+
+    @Provides
+    @Named("blue")
+    public Cloth getBlueColor() {
+        Cloth cloth = new Cloth();
+        cloth.setColor("蓝色");
         return cloth;
     }
 

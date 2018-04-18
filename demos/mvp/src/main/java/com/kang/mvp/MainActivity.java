@@ -1,6 +1,7 @@
 package com.kang.mvp;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +13,12 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity
 {
     @Inject
-    Cloth cloth;
+    @Named("red")
+    Cloth redCloth;
+
+    @Inject
+    @Named("blue")
+    Cloth blueCloth;
 
     @Inject
     Shoe shoe;
@@ -34,7 +40,7 @@ public class MainActivity extends AppCompatActivity
         content.postDelayed(new Runnable() {
             @Override
             public void run() {
-                content.setText(cloth.toString() + shoe.toString() + clothes.toString());
+                content.setText(redCloth.toString() + blueCloth.toString() + shoe.toString() + clothes.toString());
             }
         }, 2000);
     }
