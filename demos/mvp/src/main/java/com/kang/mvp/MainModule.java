@@ -25,6 +25,13 @@ public class MainModule {
     }
 
     @Provides
+    public Cloth getDefaultColor() {
+        Cloth cloth = new Cloth();
+        cloth.setColor("Default Color");
+        return cloth;
+    }
+
+    @Provides
     public Clothes getClothes(Cloth cloth) {
         return new Clothes(cloth);
     }
