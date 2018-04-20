@@ -32,7 +32,7 @@ public class MainModule {
     }
 
     @Provides
-    public Clothes getClothes(Cloth cloth) {
+    public Clothes getClothes(@Named("blue") Cloth cloth) {
         return new Clothes(cloth);
     }
 }

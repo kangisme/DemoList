@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity
         content.postDelayed(new Runnable() {
             @Override
             public void run() {
-                content.setText(redCloth.toString() + blueCloth.toString() + shoe.toString() + clothes.toString());
+                content.setText("blueCloth是否等于Clothes中色Cloth？" + (blueCloth == clothes.getCloth()));
             }
         }, 2000);
     }
