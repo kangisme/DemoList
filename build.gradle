@@ -34,4 +34,5 @@ ext {
     butterknife = 'com.jakewharton:butterknife:8.8.1'
     butterknifeProcessor = 'com.jakewharton:butterknife-compiler:8.8.1'
     lottie = 'com.airbnb.android:lottie:2.5.4'
+    retrofit = 'com.squareup.retrofit2:retrofit:2.4.0'
 }

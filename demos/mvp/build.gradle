@@ -33,9 +33,13 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation project(':commom')
     
     implementation rootProject.ext.dagger2
     annotationProcessor rootProject.ext.dagger2Processor
     implementation rootProject.ext.butterknife
     annotationProcessor rootProject.ext.butterknifeProcessor
+    implementation rootProject.ext.retrofit
+    implementation rootProject.ext.logger
 }
