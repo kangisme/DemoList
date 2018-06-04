@@ -1,10 +1,8 @@
-include ':crash_handler', ':toolbar', ':buttons', ':view_animation', ':value_animation', ':commom', ':mvp', ':window', 'rotate_drawable'
+include ':crash_handler', ':buttons', ':view_animation', ':value_animation', ':commom', ':mvp', ':index'
 project(':crash_handler').projectDir = new File('demos/crash_handler')
-project(':toolbar').projectDir = new File('demos/toolbar')
 project(':buttons').projectDir = new File('demos/buttons')
 project(':view_animation').projectDir = new File('demos/view_animation')
 project(':value_animation').projectDir = new File('demos/value_animation')
-project(':rotate_drawable').projectDir = new File('demos/rotate_drawable')
+project(':index').projectDir = new File('demos/index')
 project(':mvp').projectDir = new File('demos/mvp')
-project(':window').projectDir = new File('demos/window')
 
