@@ -9,12 +9,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/commom" />
+            <option value="$PROJECT_DIR$/demos/animation" />
             <option value="$PROJECT_DIR$/demos/buttons" />
             <option value="$PROJECT_DIR$/demos/crash_handler" />
             <option value="$PROJECT_DIR$/demos/index" />
             <option value="$PROJECT_DIR$/demos/mvp" />
-            <option value="$PROJECT_DIR$/demos/value_animation" />
-            <option value="$PROJECT_DIR$/demos/view_animation" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

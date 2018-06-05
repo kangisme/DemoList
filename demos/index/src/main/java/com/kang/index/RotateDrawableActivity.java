@@ -18,7 +18,7 @@ import android.widget.ImageView;
 
 import java.io.IOException;
 
-import com.mariostudio.rotatedrawabledemo.R;
+import com.kang.index.R;
 
 public class RotateDrawableActivity extends Activity implements View.OnClickListener, MediaPlayer.OnPreparedListener, MediaPlayer.OnCompletionListener{
 

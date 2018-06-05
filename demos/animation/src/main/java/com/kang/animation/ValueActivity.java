@@ -1,4 +1,4 @@
-package com.kang.value_animation;
+package com.kang.animation;
 
 import android.animation.Animator;
 import android.animation.AnimatorInflater;

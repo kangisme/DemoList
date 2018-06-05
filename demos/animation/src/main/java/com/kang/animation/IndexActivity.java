@@ -1,13 +1,14 @@
-package com.kang.index;
+package com.kang.animation;
+
 
 /**
- * @author created by kangren on 2018/6/4 15:31
+ * @author created by kangren on 2018/6/5 16:01
  */
 public class IndexActivity extends com.kang.demolist.commom.BaseIndexActivity {
 
-    private Class<?>[] mClasses = {RotateDrawableActivity.class};
+    private Class<?>[] mClasses = {ViewActivity.class, ValueActivity.class};
 
-    private String[] mData = {"rotate drawable"};
+    private String[] mStrings = {"ViewAnimation", "ValueAnimation"};
 
     @Override
     protected Class<?> getIndexClass(int position) {
@@ -16,6 +17,6 @@ public class IndexActivity extends com.kang.demolist.commom.BaseIndexActivity {
 
     @Override
     protected String[] getList() {
-        return mData;
+        return mStrings;
     }
 }

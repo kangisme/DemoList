@@ -1,7 +1,5 @@
 package com.kang.demolist.commom;
 
-import java.util.List;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,7 +13,7 @@ import android.widget.ListView;
 /**
  * @author created by kangren on 2018/6/4 16:10
  */
-public abstract class IndexActivity extends AppCompatActivity {
+public abstract class BaseIndexActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +24,7 @@ public abstract class IndexActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(IndexActivity.this, getIndexClass(position));
+                Intent intent = new Intent(BaseIndexActivity.this, getIndexClass(position));
                 startActivity(intent);
             }
         });
