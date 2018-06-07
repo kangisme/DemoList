@@ -1,6 +1,6 @@
 package com.kang.mvp.dagger;
 
-import com.kang.mvp.view.MainActivity;
+import com.kang.mvp.view.DaggerActivity;
 
 import dagger.Component;
 
@@ -12,5 +12,5 @@ public interface MainComponent {
      * 这个方法名可以是其它的，但是推荐用inject
      * 目标类MainActivity必须精确，不能用它的父类
      */
-    void inject(MainActivity activity);
+    void inject(DaggerActivity activity);
 }

@@ -20,6 +20,7 @@
         </activity>
 
         <activity android:name="com.kang.index.RotateDrawableActivity"/>
+        <activity android:name=".BitmapActivity"/>
     </application>
 
 </manifest>

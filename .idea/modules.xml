@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/commom/commom.iml" filepath="$PROJECT_DIR$/commom/commom.iml" />
       <module fileurl="file://$PROJECT_DIR$/demos/crash_handler/crash_handler.iml" filepath="$PROJECT_DIR$/demos/crash_handler/crash_handler.iml" />
       <module fileurl="file://$PROJECT_DIR$/demos/index/index.iml" filepath="$PROJECT_DIR$/demos/index/index.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kotlin/kotlin.iml" filepath="$PROJECT_DIR$/kotlin/kotlin.iml" />
       <module fileurl="file://$PROJECT_DIR$/demos/mvp/mvp.iml" filepath="$PROJECT_DIR$/demos/mvp/mvp.iml" />
     </modules>
   </component>
