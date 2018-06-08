@@ -1,4 +1,4 @@
-include ':crash_handler', ':buttons', ':animation', ':commom', ':mvp', ':index', ':kotlin'
+include ':crash_handler', ':buttons', ':animation', ':commom', ':mvp', ':index'
 project(':crash_handler').projectDir = new File('demos/crash_handler')
 project(':buttons').projectDir = new File('demos/buttons')
 project(':animation').projectDir = new File('demos/animation')

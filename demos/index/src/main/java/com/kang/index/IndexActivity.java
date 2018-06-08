@@ -1,25 +1,21 @@
 package com.kang.index;
 
-import java.util.ArrayList;
-
-import com.kang.demolist.commom.BaseIndexActivity;
-
 /**
  * @author created by kangren on 2018/6/4 15:31
  */
-public class IndexActivity extends BaseIndexActivity {
+public class IndexActivity extends com.kang.demolist.commom.BaseIndexActivity {
+
+    private Class<?>[] mClasses = {RotateDrawableActivity.class};
+
+    private String[] mData = {"rotate drawable"};
 
     @Override
-    protected void initTitles() {
-        mTitles = new ArrayList<>();
-        mTitles.add("RotateDrawableActivity");
-        mTitles.add("BitmapActivity");
+    protected Class<?> getIndexClass(int position) {
+        return mClasses[position];
     }
 
     @Override
-    protected void initClasses() {
-        mClasses = new ArrayList<>();
-        mClasses.add(RotateDrawableActivity.class);
-        mClasses.add(BitmapActivity.class);
+    protected String[] getList() {
+        return mData;
     }
 }

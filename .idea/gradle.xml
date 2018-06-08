@@ -14,7 +14,6 @@
             <option value="$PROJECT_DIR$/demos/crash_handler" />
             <option value="$PROJECT_DIR$/demos/index" />
             <option value="$PROJECT_DIR$/demos/mvp" />
-            <option value="$PROJECT_DIR$/kotlin" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

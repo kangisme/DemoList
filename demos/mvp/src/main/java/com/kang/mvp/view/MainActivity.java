@@ -18,7 +18,7 @@ import com.kang.mvp.model.Shoe;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class DaggerActivity extends AppCompatActivity
+public class MainActivity extends AppCompatActivity
 {
     @Inject
     @Named("red")
