@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import com.kang.mvp.MyApplication;
 import com.kang.mvp.R;
 import com.kang.mvp.dagger.DaggerSecondComponent;
 import com.kang.mvp.dagger.SecondModule;
@@ -36,7 +37,8 @@ public class SecondActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         ButterKnife.bind(this);
-        DaggerSecondComponent.builder().secondModule(new SecondModule()).build().inject(this);
+        DaggerSecondComponent.builder().baseComponent(((MyApplication)getApplication()).getBaseComponent()).
+                secondModule(new SecondModule()).build().inject(this);
         mContent.setText("蓝布料加工后变成了" + mClothHandler.handle(blueCloth) + "\nclothHandler地址:" + mClothHandler);
     }
 }

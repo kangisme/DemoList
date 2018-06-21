@@ -5,7 +5,7 @@ import com.kang.mvp.view.MainActivity;
 import dagger.Component;
 
 @PreActivity
-@Component(modules = MainModule.class)
+@Component(modules = MainModule.class, dependencies = BaseComponent.class)
 public interface MainComponent {
     /**
      * 必须让Component知道需要往哪个类中注入

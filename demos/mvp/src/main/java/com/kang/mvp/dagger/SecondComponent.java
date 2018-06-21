@@ -8,7 +8,7 @@ import dagger.Component;
  * @author created by kangren on 2018/6/14 18:21
  */
 @PreActivity
-@Component(modules = SecondModule.class)
+@Component(modules = SecondModule.class, dependencies = BaseComponent.class)
 public interface SecondComponent {
     void inject(SecondActivity activity);
 }

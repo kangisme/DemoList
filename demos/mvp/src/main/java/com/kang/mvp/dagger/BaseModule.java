@@ -1,5 +1,7 @@
 package com.kang.mvp.dagger;
 
+import javax.inject.Singleton;
+
 import com.kang.mvp.model.ClothHandler;
 
 import dagger.Module;
@@ -10,7 +12,7 @@ import dagger.Provides;
  */
 @Module
 public class BaseModule {
-    @PreActivity
+    @Singleton
     @Provides
     public ClothHandler getClothHandler() {
         return new ClothHandler();
