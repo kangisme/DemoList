@@ -1,72 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
+<com.kang.index.StickyHeightLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stickyNavLayout"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal" >
-
-    <View
-        android:background="#202020"
-        android:layout_height="64dp"
-        android:layout_width="match_parent" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2" />
-
-    <RelativeLayout
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:background="@mipmap/box_background" >
-
-        <ImageView
-            android:src="@drawable/rotate_cd"
-            android:id="@android:id/progress"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@mipmap/box_background" />
-
-        <ImageView
-            android:id="@android:id/background"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/rotate_hander" />
-    </RelativeLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3" />
+    android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_height="wrap_content"
+        android:id="@+id/id_topview"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:padding="12dp" >
+        android:layout_height="200dip"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:id="@android:id/button1"
-            android:src="@drawable/selector_previous" />
-
-        <ImageView
-            android:layout_width="81dp"
-            android:layout_height="81dp"
-            android:id="@android:id/button2"
-            android:src="@drawable/selector_play" />
-
-        <ImageView
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:id="@android:id/button3"
-            android:src="@drawable/selector_next" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="这个是头"/>
     </LinearLayout>
 
-    <View
+    <LinearLayout
+        android:id="@+id/id_indicatorview"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-</LinearLayout>
+        android:layout_height="100dip"
+        android:background="@android:color/holo_orange_light"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</com.kang.index.StickyHeightLayout>

@@ -18,8 +18,6 @@ import android.widget.ImageView;
 
 import java.io.IOException;
 
-import com.kang.index.R;
-
 public class RotateDrawableActivity extends Activity implements View.OnClickListener, MediaPlayer.OnPreparedListener, MediaPlayer.OnCompletionListener{
 
     private final int Duration = 600;  // 动画时长
@@ -40,7 +38,7 @@ public class RotateDrawableActivity extends Activity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_rotate);
 
         //判断SDK版本是否大于等于19，大于就让他显示，小于就要隐藏，不然低版本会多出来一个
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
