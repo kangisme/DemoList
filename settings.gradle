@@ -1,6 +1,5 @@
-include ':crash_handler', ':buttons', ':animation', ':commom', ':mvp', ':index'
+include ':crash_handler', ':animation', ':commom', ':mvp', ':index'
 project(':crash_handler').projectDir = new File('demos/crash_handler')
-project(':buttons').projectDir = new File('demos/buttons')
 project(':animation').projectDir = new File('demos/animation')
 project(':index').projectDir = new File('demos/index')
 project(':mvp').projectDir = new File('demos/mvp')
