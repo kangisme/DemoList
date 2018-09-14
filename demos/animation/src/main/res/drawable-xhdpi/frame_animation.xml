@@ -22,5 +22,4 @@
     <item
         android:drawable="@drawable/alipay_msp_success_blue7"
         android:duration="30"/>
-
 </animation-list>

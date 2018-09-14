@@ -11,12 +11,12 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/view_3d"
+            android:id="@+id/translate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="6dp"
-            android:text="3D动画"
+            android:text="Translate"
             android:textSize="18dp"/>
 
         <TextView
@@ -51,43 +51,6 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <com.kang.animation.Custom3DView
-            android:id="@+id/custom_3d"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:visibility="gone">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/aa"
-                android:scaleType="fitXY"
-                />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/bb"
-                android:scaleType="fitXY"
-                />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/cc"
-                android:scaleType="fitXY"
-                />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/dd"
-                android:scaleType="fitXY"
-                />
-        </com.kang.animation.Custom3DView>
 
         <ImageView
             android:id="@+id/frame"

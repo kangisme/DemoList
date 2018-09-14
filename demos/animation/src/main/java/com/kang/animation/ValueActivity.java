@@ -5,6 +5,7 @@ import android.animation.AnimatorInflater;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -56,18 +57,32 @@ public class ValueActivity extends AppCompatActivity
                 animator.setDuration(2000);
                 animator.setRepeatCount(-1);
                 animator.setRepeatMode(ValueAnimator.REVERSE);
-                // animator.addUpdateListener(new
-                // ValueAnimator.AnimatorUpdateListener()
-                // {
-                // @Override
-                // public void onAnimationUpdate(ValueAnimator animation)
-                // {
-                // float currentAlpha = (float) animation.getAnimatedValue();
-                // valueAlpha.setAlpha(currentAlpha);
-                // }
-                // });
                 animator.start();
                 break;
+        }
+    }
+
+    private class Count extends CountDownTimer {
+
+        /**
+         * @param millisInFuture    The number of millis in the future from the call
+         *                          to {@link #start()} until the countdown is done and {@link #onFinish()}
+         *                          is called.
+         * @param countDownInterval The interval along the way to receive
+         *                          {@link #onTick(long)} callbacks.
+         */
+        public Count(long millisInFuture, long countDownInterval) {
+            super(millisInFuture, countDownInterval);
+        }
+
+        @Override
+        public void onTick(long millisUntilFinished) {
+
+        }
+
+        @Override
+        public void onFinish() {
+
         }
     }
 }
